@@ -9,7 +9,7 @@ __pycache__/
 
 # ignore large data or private files
 data/
-datasets/
+#datasets/
 models/
 *.onnx
 *.pt
