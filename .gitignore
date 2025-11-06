@@ -17,7 +17,7 @@ models/
 *.zip
 *.tar.gz
 *.mp4
-
+*.inp
 # ignore IDE files
 .vscode/
 .DS_Store
