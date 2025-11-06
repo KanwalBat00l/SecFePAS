@@ -16,6 +16,7 @@ models/
 *.h5
 *.zip
 *.tar.gz
+*.mp4
 
 # ignore IDE files
 .vscode/
