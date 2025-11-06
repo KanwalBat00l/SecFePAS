@@ -1,0 +1,5 @@
+Model Name,Precision,PyTorch Train Accuracy (%),PyTorch Val/Test Accuracy (%),ONNX Test Accuracy (%),File Size (MB)
+ResNet50,FP32,87.85,86.79,86.79,89.6
+ResNet50,FP16,,,86.7,44.8
+SqueezeNet,FP32,81.16,80.94,80.94,2.8
+SqueezeNet,FP16,,,80.9,1.4

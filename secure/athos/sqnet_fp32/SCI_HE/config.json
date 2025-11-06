@@ -1,0 +1,14 @@
+{
+  "model_name": "sqnet_fp32.onnx",
+  "input_tensors": {
+    "input": "1,3,224,224"
+  },
+  "output_tensors": [
+    "output"
+  ],
+  "target": "SCI",
+  "backend": "HE",
+  "bitlength": 41,
+  "scale": 15
+}
+

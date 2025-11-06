@@ -1,0 +1,2 @@
+Algebra,Bitlen,Base,#Threads,Total Time,Total Comm,Conv Time,Conv Comm,MatMul Time,MatMul Comm,BatchNorm Time,BatchNorm Comm,Truncation Time,Truncation Comm,ReLU Time,ReLU Comm,MaxPool Time,MaxPool Comm,AvgPool Time,AvgPool Comm,ArgMax Time,ArgMax Comm
+Ring,41,4,4,163.365,58889.2,135.396,27412.2,135.335,27412.2,0,0,4.999,720.714,11.392,1529.15,11.408,1659.31,0.023,1.15912,0,0

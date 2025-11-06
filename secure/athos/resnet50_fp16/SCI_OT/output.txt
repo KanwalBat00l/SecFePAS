@@ -1,0 +1,379 @@
+bitlength: 41
+prime_mod: 2199023255552
+Using Eigen for Matmul
+connected
+connected
+connected
+connected
+After base ots, communication = 316594 bytes
+Thread i = 0, total data sent till now = 316594
+Thread i = 1, total data sent till now = 163141
+Thread i = 2, total data sent till now = 294765
+Thread i = 3, total data sent till now = 163141
+-----------Syncronizing-----------
+-----------Syncronized - now starting execution-----------
+Conv2DGroupCSF 1 called N=1, H=224, W=224, CI=3, FH=7, FW=7, CO=64, S=2,G=1
+Matmul called s1,s2,s3 = 64 147 12544
+Time in sec for current matmul = 60.049
+Time in sec for current conv = 60.078
+Relu 1 called size=802816
+Time in sec for current relu = 4.519
+Maxpool 1 called N=1, H=56, W=56, C=64, ksizeH=3, ksizeW=3
+Time in sec for current maxpool = 7.839
+Conv2DGroupCSF 2 called N=1, H=56, W=56, CI=64, FH=1, FW=1, CO=64, S=1,G=1
+Matmul called s1,s2,s3 = 64 64 3136
+Time in sec for current matmul = 7.08
+Time in sec for current conv = 7.082
+Relu 2 called size=200704
+Time in sec for current relu = 1.236
+Conv2DGroupCSF 3 called N=1, H=56, W=56, CI=64, FH=3, FW=3, CO=64, S=1,G=1
+Matmul called s1,s2,s3 = 64 576 3136
+Time in sec for current matmul = 57.936
+Time in sec for current conv = 57.947
+Relu 3 called size=200704
+Time in sec for current relu = 0.772
+Conv2DGroupCSF 4 called N=1, H=56, W=56, CI=64, FH=1, FW=1, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 64 3136
+Time in sec for current matmul = 26.516
+Time in sec for current conv = 26.524
+Conv2DGroupCSF 5 called N=1, H=56, W=56, CI=64, FH=1, FW=1, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 64 3136
+Time in sec for current matmul = 24.738
+Time in sec for current conv = 24.745
+Relu 4 called size=802816
+Time in sec for current relu = 4.67
+Conv2DGroupCSF 6 called N=1, H=56, W=56, CI=256, FH=1, FW=1, CO=64, S=1,G=1
+Matmul called s1,s2,s3 = 64 256 3136
+Time in sec for current matmul = 25.485
+Time in sec for current conv = 25.492
+Relu 5 called size=200704
+Time in sec for current relu = 1.056
+Conv2DGroupCSF 7 called N=1, H=56, W=56, CI=64, FH=3, FW=3, CO=64, S=1,G=1
+Matmul called s1,s2,s3 = 64 576 3136
+Time in sec for current matmul = 58.734
+Time in sec for current conv = 58.755
+Relu 6 called size=200704
+Time in sec for current relu = 0.843
+Conv2DGroupCSF 8 called N=1, H=56, W=56, CI=64, FH=1, FW=1, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 64 3136
+Time in sec for current matmul = 26.392
+Time in sec for current conv = 26.404
+Relu 7 called size=802816
+Time in sec for current relu = 3.93
+Conv2DGroupCSF 9 called N=1, H=56, W=56, CI=256, FH=1, FW=1, CO=64, S=1,G=1
+Matmul called s1,s2,s3 = 64 256 3136
+Time in sec for current matmul = 25.977
+Time in sec for current conv = 25.984
+Relu 8 called size=200704
+Time in sec for current relu = 0.83
+Conv2DGroupCSF 10 called N=1, H=56, W=56, CI=64, FH=3, FW=3, CO=64, S=1,G=1
+Matmul called s1,s2,s3 = 64 576 3136
+Time in sec for current matmul = 59.991
+Time in sec for current conv = 60.001
+Relu 9 called size=200704
+Time in sec for current relu = 0.826
+Conv2DGroupCSF 11 called N=1, H=56, W=56, CI=64, FH=1, FW=1, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 64 3136
+Time in sec for current matmul = 25.823
+Time in sec for current conv = 25.831
+Relu 10 called size=802816
+Time in sec for current relu = 3.96
+Conv2DGroupCSF 12 called N=1, H=56, W=56, CI=256, FH=1, FW=1, CO=128, S=1,G=1
+Matmul called s1,s2,s3 = 128 256 3136
+Time in sec for current matmul = 51.941
+Time in sec for current conv = 51.958
+Relu 11 called size=401408
+Time in sec for current relu = 1.996
+Conv2DGroupCSF 13 called N=1, H=56, W=56, CI=128, FH=3, FW=3, CO=128, S=2,G=1
+Matmul called s1,s2,s3 = 128 1152 784
+Time in sec for current matmul = 57.131
+Time in sec for current conv = 57.139
+Relu 12 called size=100352
+Time in sec for current relu = 0.395
+Conv2DGroupCSF 14 called N=1, H=28, W=28, CI=128, FH=1, FW=1, CO=512, S=1,G=1
+Matmul called s1,s2,s3 = 512 128 784
+Time in sec for current matmul = 25.524
+Time in sec for current conv = 25.534
+Conv2DGroupCSF 15 called N=1, H=56, W=56, CI=256, FH=1, FW=1, CO=512, S=2,G=1
+Matmul called s1,s2,s3 = 512 256 784
+Time in sec for current matmul = 49.836
+Time in sec for current conv = 49.839
+Relu 13 called size=401408
+Time in sec for current relu = 2.252
+Conv2DGroupCSF 16 called N=1, H=28, W=28, CI=512, FH=1, FW=1, CO=128, S=1,G=1
+Matmul called s1,s2,s3 = 128 512 784
+Time in sec for current matmul = 26.967
+Time in sec for current conv = 26.969
+Relu 14 called size=100352
+Time in sec for current relu = 0.403
+Conv2DGroupCSF 17 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=128, S=1,G=1
+Matmul called s1,s2,s3 = 128 1152 784
+Time in sec for current matmul = 57.739
+Time in sec for current conv = 57.747
+Relu 15 called size=100352
+Time in sec for current relu = 0.411
+Conv2DGroupCSF 18 called N=1, H=28, W=28, CI=128, FH=1, FW=1, CO=512, S=1,G=1
+Matmul called s1,s2,s3 = 512 128 784
+Time in sec for current matmul = 26.027
+Time in sec for current conv = 26.031
+Relu 16 called size=401408
+Time in sec for current relu = 2.007
+Conv2DGroupCSF 19 called N=1, H=28, W=28, CI=512, FH=1, FW=1, CO=128, S=1,G=1
+Matmul called s1,s2,s3 = 128 512 784
+Time in sec for current matmul = 25.518
+Time in sec for current conv = 25.522
+Relu 17 called size=100352
+Time in sec for current relu = 0.4
+Conv2DGroupCSF 20 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=128, S=1,G=1
+Matmul called s1,s2,s3 = 128 1152 784
+Time in sec for current matmul = 57.725
+Time in sec for current conv = 57.729
+Relu 18 called size=100352
+Time in sec for current relu = 0.59
+Conv2DGroupCSF 21 called N=1, H=28, W=28, CI=128, FH=1, FW=1, CO=512, S=1,G=1
+Matmul called s1,s2,s3 = 512 128 784
+Time in sec for current matmul = 25.785
+Time in sec for current conv = 25.787
+Relu 19 called size=401408
+Time in sec for current relu = 1.521
+Conv2DGroupCSF 22 called N=1, H=28, W=28, CI=512, FH=1, FW=1, CO=128, S=1,G=1
+Matmul called s1,s2,s3 = 128 512 784
+Time in sec for current matmul = 25.366
+Time in sec for current conv = 25.368
+Relu 20 called size=100352
+Time in sec for current relu = 0.388
+Conv2DGroupCSF 23 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=128, S=1,G=1
+Matmul called s1,s2,s3 = 128 1152 784
+Time in sec for current matmul = 58.147
+Time in sec for current conv = 58.152
+Relu 21 called size=100352
+Time in sec for current relu = 0.423
+Conv2DGroupCSF 24 called N=1, H=28, W=28, CI=128, FH=1, FW=1, CO=512, S=1,G=1
+Matmul called s1,s2,s3 = 512 128 784
+Time in sec for current matmul = 27.395
+Time in sec for current conv = 27.398
+Relu 22 called size=401408
+Time in sec for current relu = 1.485
+Conv2DGroupCSF 25 called N=1, H=28, W=28, CI=512, FH=1, FW=1, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 512 784
+Time in sec for current matmul = 52.008
+Time in sec for current conv = 52.015
+Relu 23 called size=200704
+Time in sec for current relu = 0.857
+Conv2DGroupCSF 26 called N=1, H=28, W=28, CI=256, FH=3, FW=3, CO=256, S=2,G=1
+Matmul called s1,s2,s3 = 256 2304 196
+Time in sec for current matmul = 50.603
+Time in sec for current conv = 50.609
+Relu 24 called size=50176
+Time in sec for current relu = 0.23
+Conv2DGroupCSF 27 called N=1, H=14, W=14, CI=256, FH=1, FW=1, CO=1024, S=1,G=1
+Matmul called s1,s2,s3 = 1024 256 196
+Time in sec for current matmul = 24.369
+Time in sec for current conv = 24.371
+Conv2DGroupCSF 28 called N=1, H=28, W=28, CI=512, FH=1, FW=1, CO=1024, S=2,G=1
+Matmul called s1,s2,s3 = 1024 512 196
+Time in sec for current matmul = 48.536
+Time in sec for current conv = 48.54
+Relu 25 called size=200704
+Time in sec for current relu = 0.88
+Conv2DGroupCSF 29 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 1024 196
+Time in sec for current matmul = 22.8
+Time in sec for current conv = 22.803
+Relu 26 called size=50176
+Time in sec for current relu = 0.238
+Conv2DGroupCSF 30 called N=1, H=14, W=14, CI=256, FH=3, FW=3, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 2304 196
+Time in sec for current matmul = 50.678
+Time in sec for current conv = 50.688
+Relu 27 called size=50176
+Time in sec for current relu = 0.233
+Conv2DGroupCSF 31 called N=1, H=14, W=14, CI=256, FH=1, FW=1, CO=1024, S=1,G=1
+Matmul called s1,s2,s3 = 1024 256 196
+Time in sec for current matmul = 24.545
+Time in sec for current conv = 24.548
+Relu 28 called size=200704
+Time in sec for current relu = 1.225
+Conv2DGroupCSF 32 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 1024 196
+Time in sec for current matmul = 23.265
+Time in sec for current conv = 23.267
+Relu 29 called size=50176
+Time in sec for current relu = 0.278
+Conv2DGroupCSF 33 called N=1, H=14, W=14, CI=256, FH=3, FW=3, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 2304 196
+Time in sec for current matmul = 52.171
+Time in sec for current conv = 52.178
+Relu 30 called size=50176
+Time in sec for current relu = 0.19
+Conv2DGroupCSF 34 called N=1, H=14, W=14, CI=256, FH=1, FW=1, CO=1024, S=1,G=1
+Matmul called s1,s2,s3 = 1024 256 196
+Time in sec for current matmul = 24.279
+Time in sec for current conv = 24.282
+Relu 31 called size=200704
+Time in sec for current relu = 0.746
+Conv2DGroupCSF 35 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 1024 196
+Time in sec for current matmul = 22.883
+Time in sec for current conv = 22.886
+Relu 32 called size=50176
+Time in sec for current relu = 0.229
+Conv2DGroupCSF 36 called N=1, H=14, W=14, CI=256, FH=3, FW=3, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 2304 196
+Time in sec for current matmul = 49.834
+Time in sec for current conv = 49.848
+Relu 33 called size=50176
+Time in sec for current relu = 0.238
+Conv2DGroupCSF 37 called N=1, H=14, W=14, CI=256, FH=1, FW=1, CO=1024, S=1,G=1
+Matmul called s1,s2,s3 = 1024 256 196
+Time in sec for current matmul = 24.035
+Time in sec for current conv = 24.037
+Relu 34 called size=200704
+Time in sec for current relu = 0.716
+Conv2DGroupCSF 38 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 1024 196
+Time in sec for current matmul = 22.958
+Time in sec for current conv = 22.961
+Relu 35 called size=50176
+Time in sec for current relu = 0.191
+Conv2DGroupCSF 39 called N=1, H=14, W=14, CI=256, FH=3, FW=3, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 2304 196
+Time in sec for current matmul = 49.964
+Time in sec for current conv = 49.973
+Relu 36 called size=50176
+Time in sec for current relu = 0.474
+Conv2DGroupCSF 40 called N=1, H=14, W=14, CI=256, FH=1, FW=1, CO=1024, S=1,G=1
+Matmul called s1,s2,s3 = 1024 256 196
+Time in sec for current matmul = 24.198
+Time in sec for current conv = 24.201
+Relu 37 called size=200704
+Time in sec for current relu = 1.019
+Conv2DGroupCSF 41 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 1024 196
+Time in sec for current matmul = 23.781
+Time in sec for current conv = 23.783
+Relu 38 called size=50176
+Time in sec for current relu = 0.188
+Conv2DGroupCSF 42 called N=1, H=14, W=14, CI=256, FH=3, FW=3, CO=256, S=1,G=1
+Matmul called s1,s2,s3 = 256 2304 196
+Time in sec for current matmul = 51.011
+Time in sec for current conv = 51.022
+Relu 39 called size=50176
+Time in sec for current relu = 0.222
+Conv2DGroupCSF 43 called N=1, H=14, W=14, CI=256, FH=1, FW=1, CO=1024, S=1,G=1
+Matmul called s1,s2,s3 = 1024 256 196
+Time in sec for current matmul = 24.36
+Time in sec for current conv = 24.362
+Relu 40 called size=200704
+Time in sec for current relu = 0.755
+Conv2DGroupCSF 44 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=512, S=1,G=1
+Matmul called s1,s2,s3 = 512 1024 196
+Time in sec for current matmul = 46.126
+Time in sec for current conv = 46.132
+Relu 41 called size=100352
+Time in sec for current relu = 0.418
+Conv2DGroupCSF 45 called N=1, H=14, W=14, CI=512, FH=3, FW=3, CO=512, S=2,G=1
+Matmul called s1,s2,s3 = 512 4608 49
+Time in sec for current matmul = 49.104
+Time in sec for current conv = 49.149
+Relu 42 called size=25088
+Time in sec for current relu = 0.139
+Conv2DGroupCSF 46 called N=1, H=7, W=7, CI=512, FH=1, FW=1, CO=2048, S=1,G=1
+Matmul called s1,s2,s3 = 2048 512 49
+Time in sec for current matmul = 23.887
+Time in sec for current conv = 23.903
+Conv2DGroupCSF 47 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=2048, S=2,G=1
+Matmul called s1,s2,s3 = 2048 1024 49
+Time in sec for current matmul = 48.079
+Time in sec for current conv = 48.111
+Relu 43 called size=100352
+Time in sec for current relu = 0.428
+Conv2DGroupCSF 48 called N=1, H=7, W=7, CI=2048, FH=1, FW=1, CO=512, S=1,G=1
+Matmul called s1,s2,s3 = 512 2048 49
+Time in sec for current matmul = 22.117
+Time in sec for current conv = 22.14
+Relu 44 called size=25088
+Time in sec for current relu = 0.118
+Conv2DGroupCSF 49 called N=1, H=7, W=7, CI=512, FH=3, FW=3, CO=512, S=1,G=1
+Matmul called s1,s2,s3 = 512 4608 49
+Time in sec for current matmul = 50.052
+Time in sec for current conv = 50.088
+Relu 45 called size=25088
+Time in sec for current relu = 0.142
+Conv2DGroupCSF 50 called N=1, H=7, W=7, CI=512, FH=1, FW=1, CO=2048, S=1,G=1
+Matmul called s1,s2,s3 = 2048 512 49
+Time in sec for current matmul = 24.701
+Time in sec for current conv = 24.715
+Relu 46 called size=100352
+Time in sec for current relu = 0.509
+Conv2DGroupCSF 51 called N=1, H=7, W=7, CI=2048, FH=1, FW=1, CO=512, S=1,G=1
+Matmul called s1,s2,s3 = 512 2048 49
+Time in sec for current matmul = 22.59
+Time in sec for current conv = 22.608
+Relu 47 called size=25088
+Time in sec for current relu = 0.125
+Conv2DGroupCSF 52 called N=1, H=7, W=7, CI=512, FH=3, FW=3, CO=512, S=1,G=1
+Matmul called s1,s2,s3 = 512 4608 49
+Time in sec for current matmul = 48.983
+Time in sec for current conv = 49.021
+Relu 48 called size=25088
+Time in sec for current relu = 0.135
+Conv2DGroupCSF 53 called N=1, H=7, W=7, CI=512, FH=1, FW=1, CO=2048, S=1,G=1
+Matmul called s1,s2,s3 = 2048 512 49
+Time in sec for current matmul = 23.977
+Time in sec for current conv = 23.995
+Relu 49 called size=100352
+Time in sec for current relu = 0.739
+AvgPool 1 called N=1, H=1, W=1, C=2048, ksizeH=7, ksizeW=7
+Time in sec for current avgpool = 0.039
+Matmul called s1,s2,s3 = 1 2048 4
+Time in sec for current matmul = 0.034
+Thread i = 0, total data sent till now = 113522226699
+Thread i = 1, total data sent till now = 111653625509
+Thread i = 2, total data sent till now = 113522160466
+Thread i = 3, total data sent till now = 111567054501
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
+Total time taken = 2013822 milliseconds.
+Total data sent = 429405 MiB.
+Number of rounds = 3881
+Total comm (sent+received) = (see SERVER OUTPUT)
+------------------------------------------------------
+Total time in Conv = 1940.25 seconds.
+Total time in MatMul = 1939.75 seconds.
+Total time in BatchNorm = 0 seconds.
+Total time in Truncation = 18.282 seconds.
+Total time in Relu = 46.575 seconds.
+Total time in MaxPool = 7.839 seconds.
+Total time in AvgPool = 0.039 seconds.
+Total time in ArgMax = 0 seconds.
+Total time in MatAdd = 0 seconds.
+Total time in MatAddBroadCast = 0 seconds.
+Total time in MulCir = 0 seconds.
+Total time in ScalarMul = 0 seconds.
+Total time in Sigmoid = 0 seconds.
+Total time in Tanh = 0 seconds.
+Total time in Sqrt = 0 seconds.
+Total time in NormaliseL2 = 0 seconds.
+------------------------------------------------------
+Conv data sent = 212094 MiB.
+MatMul data sent = 212096 MiB.
+BatchNorm data sent = 0 MiB.
+Truncation data sent = 1451.91 MiB.
+Relu data sent = 2996.25 MiB.
+Maxpool data sent = 502.59 MiB.
+Avgpool data sent = 1.44458 MiB.
+ArgMax data sent = 0 MiB.
+MatAdd data sent = 0 MiB.
+MatAddBroadCast data sent = 0 MiB.
+MulCir data sent = 0 MiB.
+Sigmoid data sent = 0 MiB.
+Tanh data sent = 0 MiB.
+Sqrt data sent = 0 MiB.
+NormaliseL2 data sent = 0 MiB.
+------------------------------------------------------
+2199023131217
+150009
+2199023196610
+2199023170156

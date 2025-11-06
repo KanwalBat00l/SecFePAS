@@ -1,0 +1,22 @@
+# ignore compiled files, data, and models
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.o
+*.exe
+
+# ignore large data or private files
+data/
+datasets/
+models/
+*.onnx
+*.pt
+*.h5
+*.zip
+*.tar.gz
+
+# ignore IDE files
+.vscode/
+.DS_Store

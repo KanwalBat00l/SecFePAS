@@ -1,0 +1,179 @@
+Phase 1 Sample Inference Logging Started. Results will be saved to: /content/drive/MyDrive/Secure-Inference/phase1_results/phase1_non_secure_sample_inference.txt
+Using device: cuda
+DATA_ROOT for sample images: face_data/FaceClasses
+Number of classes (NUM_CLASSES): 4
+'val_tf' (validation transform) found in scope and will be used.
+ResNet50 PyTorch model loaded from /content/drive/MyDrive/Secure-Inference/models/resnet50_mod.pth
+SqueezeNet PyTorch model loaded from /content/drive/MyDrive/Secure-Inference/models/squeezenet_mod.pth
+ONNX session created for ResNet50_FP32 using ['CUDAExecutionProvider', 'CPUExecutionProvider']
+ONNX session created for ResNet50_FP16 using ['CUDAExecutionProvider', 'CPUExecutionProvider']
+ONNX session created for SqueezeNet_FP32 using ['CUDAExecutionProvider', 'CPUExecutionProvider']
+ONNX session created for SqueezeNet_FP16 using ['CUDAExecutionProvider', 'CPUExecutionProvider']
+
+Using FIXED sample images: {'0': ['aa048t2aaunaff005.png', 'aa048t2aaunaff008.png'], '1': ['aa048t2aeaff017.png', 'aa048t2aeaff018.png'], '2': ['ak064t1aaaff100.png', 'ak064t1aaaff101.png'], '3': ['ak064t1aaaff095.png', 'ak064t1aaaff096.png']}
+Verified sample images to be processed: {'0': ['face_data/FaceClasses/0/aa048t2aaunaff005.png', 'face_data/FaceClasses/0/aa048t2aaunaff008.png'], '1': ['face_data/FaceClasses/1/aa048t2aeaff017.png', 'face_data/FaceClasses/1/aa048t2aeaff018.png'], '2': ['face_data/FaceClasses/2/ak064t1aaaff100.png', 'face_data/FaceClasses/2/ak064t1aaaff101.png'], '3': ['face_data/FaceClasses/3/ak064t1aaaff095.png', 'face_data/FaceClasses/3/ak064t1aaaff096.png']}
+
+============================== SAMPLE INFERENCE RESULTS ==============================
+
+--- Image: face_data/FaceClasses/0/aa048t2aaunaff005.png (True Label: 0) ---
+  [PyTorch ResNet50]:
+    Predicted Class: 0, Probabilities: [9.8963e-01 9.8646e-03 3.7636e-04 1.3234e-04]
+    Logits: [ 4.5555 -0.0529 -3.3191 -4.3643]
+  [PyTorch SqueezeNet]:
+    Predicted Class: 0, Probabilities: [9.6663e-01 3.1075e-02 1.8421e-03 4.5298e-04]
+    Logits: [11.0535  7.6161  4.7906  3.3878]
+  [ONNX ResNet50_FP32]:
+    Predicted Class: 0, Probabilities: [9.8963e-01 9.8646e-03 3.7635e-04 1.3234e-04]
+    Logits: [ 4.5555 -0.0529 -3.3191 -4.3643]
+  [ONNX ResNet50_FP16]:
+    Predicted Class: 0, Probabilities: [9.902e-01 9.560e-03 3.510e-04 1.385e-04]
+    Logits: [ 4.562  -0.0768 -3.385  -4.316 ]
+  [ONNX SqueezeNet_FP32]:
+    Predicted Class: 0, Probabilities: [9.6663e-01 3.1075e-02 1.8421e-03 4.5298e-04]
+    Logits: [11.0535  7.6161  4.7906  3.3878]
+  [ONNX SqueezeNet_FP16]:
+    Predicted Class: 0, Probabilities: [9.668e-01 3.119e-02 1.852e-03 4.520e-04]
+    Logits: [11.055  7.62   4.797  3.387]
+
+--- Image: face_data/FaceClasses/0/aa048t2aaunaff008.png (True Label: 0) ---
+  [PyTorch ResNet50]:
+    Predicted Class: 0, Probabilities: [9.8646e-01 1.0293e-02 3.1186e-03 1.3048e-04]
+    Logits: [ 3.9803 -0.5824 -1.7765 -4.9504]
+  [PyTorch SqueezeNet]:
+    Predicted Class: 0, Probabilities: [9.6941e-01 2.9501e-02 9.7796e-04 1.1406e-04]
+    Logits: [11.842   8.3497  4.943   2.7942]
+  [ONNX ResNet50_FP32]:
+    Predicted Class: 0, Probabilities: [9.8646e-01 1.0293e-02 3.1186e-03 1.3048e-04]
+    Logits: [ 3.9803 -0.5824 -1.7764 -4.9504]
+  [ONNX ResNet50_FP16]:
+    Predicted Class: 0, Probabilities: [9.854e-01 1.061e-02 3.378e-03 1.315e-04]
+    Logits: [ 3.953  -0.5796 -1.724  -4.973 ]
+  [ONNX SqueezeNet_FP32]:
+    Predicted Class: 0, Probabilities: [9.6941e-01 2.9501e-02 9.7796e-04 1.1406e-04]
+    Logits: [11.842   8.3497  4.943   2.7942]
+  [ONNX SqueezeNet_FP16]:
+    Predicted Class: 0, Probabilities: [9.688e-01 2.971e-02 9.899e-04 1.141e-04]
+    Logits: [11.836  8.35   4.95   2.793]
+
+--- Image: face_data/FaceClasses/1/aa048t2aeaff017.png (True Label: 1) ---
+  [PyTorch ResNet50]:
+    Predicted Class: 1, Probabilities: [5.4442e-04 9.8651e-01 2.5319e-03 1.0418e-02]
+    Logits: [-3.806   3.6962 -2.269  -0.8545]
+  [PyTorch SqueezeNet]:
+    Predicted Class: 1, Probabilities: [0.0155 0.9338 0.0381 0.0127]
+    Logits: [ 6.1115 10.2124  7.014   5.9113]
+  [ONNX ResNet50_FP32]:
+    Predicted Class: 1, Probabilities: [5.4444e-04 9.8651e-01 2.5319e-03 1.0418e-02]
+    Logits: [-3.806   3.6962 -2.269  -0.8545]
+  [ONNX ResNet50_FP16]:
+    Predicted Class: 1, Probabilities: [5.536e-04 9.854e-01 2.769e-03 1.078e-02]
+    Logits: [-3.818   3.664  -2.21   -0.8516]
+  [ONNX SqueezeNet_FP32]:
+    Predicted Class: 1, Probabilities: [0.0155 0.9338 0.0381 0.0127]
+    Logits: [ 6.1115 10.2124  7.014   5.9113]
+  [ONNX SqueezeNet_FP16]:
+    Predicted Class: 1, Probabilities: [0.0153 0.934  0.0381 0.0125]
+    Logits: [ 6.11  10.22   7.02   5.906]
+
+--- Image: face_data/FaceClasses/1/aa048t2aeaff018.png (True Label: 1) ---
+  [PyTorch ResNet50]:
+    Predicted Class: 1, Probabilities: [2.2294e-04 9.9708e-01 1.7316e-03 9.6491e-04]
+    Logits: [-3.8817  4.524  -1.8318 -2.4165]
+  [PyTorch SqueezeNet]:
+    Predicted Class: 1, Probabilities: [0.0123 0.9618 0.0203 0.0056]
+    Logits: [ 6.1784 10.5342  6.6754  5.3896]
+  [ONNX ResNet50_FP32]:
+    Predicted Class: 1, Probabilities: [2.2294e-04 9.9708e-01 1.7316e-03 9.6492e-04]
+    Logits: [-3.8817  4.524  -1.8318 -2.4165]
+  [ONNX ResNet50_FP16]:
+    Predicted Class: 1, Probabilities: [2.229e-04 9.971e-01 1.947e-03 1.039e-03]
+    Logits: [-3.918  4.484 -1.753 -2.383]
+  [ONNX SqueezeNet_FP32]:
+    Predicted Class: 1, Probabilities: [0.0123 0.9618 0.0203 0.0056]
+    Logits: [ 6.1784 10.5342  6.6754  5.3896]
+  [ONNX SqueezeNet_FP16]:
+    Predicted Class: 1, Probabilities: [0.0123 0.9614 0.0203 0.0055]
+    Logits: [ 6.18  10.54   6.68   5.383]
+
+--- Image: face_data/FaceClasses/2/ak064t1aaaff100.png (True Label: 2) ---
+  [PyTorch ResNet50]:
+    Predicted Class: 0, Probabilities: [0.4645 0.0597 0.4164 0.0594]
+    Logits: [ 0.445  -1.606   0.3356 -1.6113]
+  [PyTorch SqueezeNet]:
+    Predicted Class: 1, Probabilities: [0.273  0.3481 0.1301 0.2488]
+    Logits: [7.4287 7.6714 6.6877 7.3355]
+  [ONNX ResNet50_FP32]:
+    Predicted Class: 0, Probabilities: [0.4645 0.0597 0.4164 0.0594]
+    Logits: [ 0.445  -1.606   0.3356 -1.6113]
+  [ONNX ResNet50_FP16]:
+    Predicted Class: 0, Probabilities: [0.446  0.0583 0.437  0.0587]
+    Logits: [ 0.3992 -1.635   0.3792 -1.629 ]
+  [ONNX SqueezeNet_FP32]:
+    Predicted Class: 1, Probabilities: [0.273  0.3481 0.1301 0.2488]
+    Logits: [7.4287 7.6714 6.6877 7.3355]
+  [ONNX SqueezeNet_FP16]:
+    Predicted Class: 1, Probabilities: [0.2725 0.3499 0.1293 0.2482]
+    Logits: [7.426 7.676 6.68  7.332]
+
+--- Image: face_data/FaceClasses/2/ak064t1aaaff101.png (True Label: 2) ---
+  [PyTorch ResNet50]:
+    Predicted Class: 0, Probabilities: [0.678  0.0032 0.2694 0.0494]
+    Logits: [ 1.4298 -3.9329  0.5069 -1.189 ]
+  [PyTorch SqueezeNet]:
+    Predicted Class: 0, Probabilities: [0.6191 0.0891 0.0891 0.2028]
+    Logits: [8.5286 6.5896 6.5898 7.4126]
+  [ONNX ResNet50_FP32]:
+    Predicted Class: 0, Probabilities: [0.678  0.0032 0.2694 0.0494]
+    Logits: [ 1.4298 -3.9329  0.5069 -1.189 ]
+  [ONNX ResNet50_FP16]:
+    Predicted Class: 0, Probabilities: [0.68   0.0025 0.2773 0.0399]
+    Logits: [ 1.526  -4.082   0.6294 -1.31  ]
+  [ONNX SqueezeNet_FP32]:
+    Predicted Class: 0, Probabilities: [0.6191 0.0891 0.0891 0.2028]
+    Logits: [8.5286 6.5896 6.5898 7.4126]
+  [ONNX SqueezeNet_FP16]:
+    Predicted Class: 0, Probabilities: [0.62   0.09   0.0891 0.2007]
+    Logits: [8.53  6.6   6.59  7.402]
+
+--- Image: face_data/FaceClasses/3/ak064t1aaaff095.png (True Label: 3) ---
+  [PyTorch ResNet50]:
+    Predicted Class: 3, Probabilities: [0.0583 0.1061 0.0599 0.7757]
+    Logits: [-1.3443 -0.7448 -1.3173  1.2444]
+  [PyTorch SqueezeNet]:
+    Predicted Class: 1, Probabilities: [0.0389 0.7388 0.0299 0.1924]
+    Logits: [6.0033 8.947  5.7389 7.6016]
+  [ONNX ResNet50_FP32]:
+    Predicted Class: 3, Probabilities: [0.0583 0.1061 0.0599 0.7757]
+    Logits: [-1.3443 -0.7448 -1.3173  1.2444]
+  [ONNX ResNet50_FP16]:
+    Predicted Class: 3, Probabilities: [0.0562 0.1031 0.062  0.779 ]
+    Logits: [-1.373 -0.764 -1.275  1.257]
+  [ONNX SqueezeNet_FP32]:
+    Predicted Class: 1, Probabilities: [0.0389 0.7388 0.0299 0.1924]
+    Logits: [6.0033 8.947  5.7389 7.6016]
+  [ONNX SqueezeNet_FP16]:
+    Predicted Class: 1, Probabilities: [0.0389 0.7393 0.0298 0.192 ]
+    Logits: [6.008 8.95  5.742 7.605]
+
+--- Image: face_data/FaceClasses/3/ak064t1aaaff096.png (True Label: 3) ---
+  [PyTorch ResNet50]:
+    Predicted Class: 3, Probabilities: [0.1269 0.1293 0.0782 0.6657]
+    Logits: [-0.8307 -0.8121 -1.3149  0.827 ]
+  [PyTorch SqueezeNet]:
+    Predicted Class: 3, Probabilities: [0.012  0.136  0.0212 0.8307]
+    Logits: [ 5.8619  8.2863  6.4275 10.0958]
+  [ONNX ResNet50_FP32]:
+    Predicted Class: 3, Probabilities: [0.1269 0.1293 0.0782 0.6657]
+    Logits: [-0.8307 -0.8121 -1.3149  0.8269]
+  [ONNX ResNet50_FP16]:
+    Predicted Class: 3, Probabilities: [0.1365 0.1387 0.0866 0.638 ]
+    Logits: [-0.806  -0.791  -1.262   0.7363]
+  [ONNX SqueezeNet_FP32]:
+    Predicted Class: 3, Probabilities: [0.012  0.136  0.0212 0.8307]
+    Logits: [ 5.8619  8.2863  6.4275 10.0958]
+  [ONNX SqueezeNet_FP16]:
+    Predicted Class: 3, Probabilities: [0.0121 0.1366 0.0213 0.8296]
+    Logits: [ 5.863  8.29   6.434 10.09 ]
+
+============================== Sample Inference Logging Complete ==============================
+
