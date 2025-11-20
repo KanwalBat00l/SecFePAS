@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libSCI-Cheetah-BuildingBlocks.a "CMakeFiles/SCI-Cheetah-BuildingBlocks.dir/value-extension.cpp.o" "CMakeFiles/SCI-Cheetah-BuildingBlocks.dir/aux-protocols.cpp.o" "CMakeFiles/SCI-Cheetah-BuildingBlocks.dir/truncation.cpp.o"
+/usr/bin/ranlib ../../../lib/libSCI-Cheetah-BuildingBlocks.a

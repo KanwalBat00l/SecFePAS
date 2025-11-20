@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libCheetah-Linear.a "CMakeFiles/Cheetah-Linear.dir/cheetah-api.cpp.o"
+/usr/bin/ranlib ../../../lib/libCheetah-Linear.a

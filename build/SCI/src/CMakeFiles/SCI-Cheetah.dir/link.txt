@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libSCI-Cheetah.a "CMakeFiles/SCI-Cheetah.dir/library_fixed_uniform_cheetah.cpp.o" "CMakeFiles/SCI-Cheetah.dir/library_fixed_uniform.cpp.o" "CMakeFiles/SCI-Cheetah.dir/library_fixed.cpp.o" "CMakeFiles/SCI-Cheetah.dir/globals.cpp.o" "CMakeFiles/SCI-Cheetah.dir/cleartext_library_fixed.cpp.o"
+/usr/bin/ranlib ../../lib/libSCI-Cheetah.a

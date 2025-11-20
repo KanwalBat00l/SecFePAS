@@ -1,0 +1,18 @@
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT license.
+
+prefix=/home/kanwal/OpenCheetah/build
+libdir=${prefix}/lib
+includedir=${prefix}/include/SEAL-3.7
+
+Name: Microsoft SEAL
+Version: 3.7.2
+Description: An easy-to-use homomorphic encryption library
+
+Requires: 
+Requires: 
+Requires: libzstd >= 1
+Requires: hexl >= 1
+
+Libs: -L${libdir} -lseal-3.7
+Cflags: -std=c++17 -I${includedir}
