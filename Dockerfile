@@ -17,7 +17,7 @@ COPY pretrained ./pretrained
 
 # Extract archives correctly inside /app/pretrained
 RUN cd /app/pretrained && \
-    for f in *.tar.gz; do tar -xzvf "$f" && rm "$f"; done
+    for f in *.gz; do tar -xzvf "$f" && rm "$f"; done
 
 # Copy scripts
 COPY scripts ./scripts
