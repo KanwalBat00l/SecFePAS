@@ -16,7 +16,11 @@ The `demo` branch contains the following:
 - scripts/ # Runtime scripts: run-server.sh, run-client.sh, common.sh
 - README.md # This documentation
 
-
+Clone only the demo branch
+```bash
+git clone --branch demo --single-branch https://github.com/KanwalBat00l/SecFePAS.git
+cd SecFePAS
+```
 ---
 
 ## 2. Prerequisites
